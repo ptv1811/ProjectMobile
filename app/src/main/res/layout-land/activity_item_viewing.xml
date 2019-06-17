@@ -1,0 +1,219 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActitvity">
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="326dp"
+        android:layout_height="274dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="29dp"
+        app:layout_constraintBottom_toTopOf="@+id/fab"
+        app:layout_constraintEnd_toStartOf="@+id/scrollView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/miy" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="137dp"
+        android:layout_marginLeft="137dp"
+        android:layout_marginEnd="129dp"
+        android:layout_marginRight="129dp"
+        android:layout_marginBottom="52dp"
+        android:background="#40E0D0"
+        android:backgroundTint="#40E0D0"
+        android:src="@drawable/floppy__save__chip__disk"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/scrollView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#40E0D0" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="410dp"
+        android:layout_height="414dp"
+        android:layout_marginStart="321dp"
+        android:layout_marginLeft="321dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/Food_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/res_name"
+                android:layout_width="59dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="315dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="392dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/res_name" />
+
+            <ImageView
+                android:id="@+id/res_loca"
+                android:layout_width="58dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="316dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="308dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/res_location" />
+
+            <ImageView
+                android:id="@+id/res_checkin"
+                android:layout_width="57dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="37dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="28dp"
+                app:layout_constraintBottom_toTopOf="@+id/res_price"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/res_loca"
+                app:srcCompat="@drawable/res_lastcheckin" />
+
+            <ImageView
+                android:id="@+id/res_price"
+                android:layout_width="58dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="316dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="148dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/res_price" />
+
+            <ImageView
+                android:id="@+id/res_hotline"
+                android:layout_width="58dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="315dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="64dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/res_phone" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="229dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="71dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="396dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/res_name" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="232dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/res_hotline"
+                app:layout_constraintTop_toBottomOf="@+id/price" />
+
+            <EditText
+                android:id="@+id/price"
+                android:layout_width="229dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="71dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="152dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/res_price" />
+
+            <EditText
+                android:id="@+id/checkin"
+                android:layout_width="229dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="71dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="228dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/res_checkin" />
+
+            <EditText
+                android:id="@+id/location"
+                android:layout_width="229dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="71dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="312dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/res_loca" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
